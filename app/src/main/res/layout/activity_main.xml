@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20sp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#643EA8"
+            android:hint="Intent"
+            android:lineSpacingExtra="8sp"
+            android:padding="8sp"
+            android:text="Intent"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+
+            android:layout_width="350dp"
+            android:layout_height="1500dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"
+
+
+
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnload"
+        android:layout_width="287dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/rounded_corner"
+        android:lineSpacingExtra="8sp"
+        android:padding="8sp"
+        android:paddingLeft="40dp"
+        android:paddingBottom="8dp"
+        android:radius="20dp"
+        android:text="LOAD IMAGE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
